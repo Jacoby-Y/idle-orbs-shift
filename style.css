@@ -1,0 +1,29 @@
+* { margin: 0; padding: 0; }
+body {
+	background-color: #212121;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
+}
+#canvas {
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+}
+
+#main-wrapper {
+	/* display: none; */
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	background-color: #212121;
+}
+
+@media only screen and (min-width: 701px) {
+  #main-wrapper {
+		background-color: yellow;
+		right: 500px;
+	}
+	#canvas {
+		left: calc(100vw - 500px);
+	}
+}
